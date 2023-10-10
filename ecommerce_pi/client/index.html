@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./index.css">
+	<script src="./js/productosService.js"></script>
+	<script src="./js/cartService.js" defer></script>
+	<script src="./js/index.js" defer></script>
+	<script src="https://sdk.mercadopago.com/js/v2"></script>
+
+	<title>Tesoros de Cuyo</title>
+</head>
+<body>
+    <header>
+		<nav>
+			<a href="" alt="Logo" id="logo"></a>
+			<div>
+				<a href="./index.html">Inicio</a>
+				<a href="#">Ir a web</a>
+				<a href="./cart.html" id="cart"><img src="./img/cart-alt-solid-36.png" alt=""><span id="cuenta-carrito">0</span></a>
+			</div>
+			<div class="search-container">
+				<input type="text" id="search-input" placeholder="Buscar por nombre">
+				<button id="search-button">Buscar</button>
+			</div>
+			<div id="results">
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section id="productos-container">
+		</section>
+	</main> 
+    <footer>
+		<span><img src="./img/facebook-circle-logo-36.png"></span>
+		<span><img src="./img/instagram-logo-36.png"></span>
+		
+	</footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="cart.css">
+	<script src="/client/js/productosService.js"></script>
+    <script src="./js/cartService.js" defer></script>
+	<script src="https://sdk.mercadopago.com/js/v2"></script>
+	<script src="./js/cart.js" defer></script>
+	
+
+    
+	<title>vinos - Carrito</title>
+</head>
+<body>
+  <header>
+		<nav>
+			<a href="" alt="Logo" id="logo"></a>
+			<div>
+				<a href="./index.html">Inicio</a>
+				<a href="#">Ir a la web</a>
+				<a href="./cart.html" id="cart"><img src="" alt=""><span id="cuenta-carrito">0</span></a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="index.html">elige algunos productos</a></p>
+		<section id="cart-container">
+		</section>
+  <section id="totales">
+    <p>Total unidades: <span id="cantidad">0</span></p>
+    <p>Total precio: $<span id="precio">0</span></p>
+    <button class="btn-primary" id="checkout-btn">ir a pagar</button>
+	<div id="button-checkout"></div>
+    <button  id="reiniciar">Reiniciar</button>
+  </section>
+</main>
+	<footer>
+		 
+</body>
+
+</html>
