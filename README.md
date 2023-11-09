@@ -9,3 +9,11 @@ junto con la historia de dicha bodega.
 Se podra visualizar y seleccionar los productos disponibles que se ofrecen en la tienda, agregar las unidades que se desean y los precios de cada uno 
 de los productos disponibles.
 
+## 📌Integrantes
+
+👧 Micaela Díaz 
+👦 Valentin Morbidelli 
+👦 Lucas Montoya
+👧 Lourdes Rebolledo
+👧 Lujan Rebolledo 
+👧 Ana Zambrana 
