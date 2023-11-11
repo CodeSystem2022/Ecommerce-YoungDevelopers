@@ -1,0 +1,1 @@
+SELECT * FROM productos_vinos.producto;

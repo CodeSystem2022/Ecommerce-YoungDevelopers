@@ -1,0 +1,10 @@
+id,nombre,precio,urlImagen,deleted
+1,"Sol Juana",1500.00,https://raw.githubusercontent.com/CodeSystem2022/Ecommerce-YoungDevelopers/main/ecommerce_pi/img-vinos/vino1.jpg?token=GHSAT0AAAAAACJGTNI6DA4OIC4GZYIJK2G2ZJW3LZQ,0
+2,"Borges ",1700.00,https://raw.githubusercontent.com/CodeSystem2022/Ecommerce-YoungDevelopers/main/ecommerce_pi/img-vinos/vino2.jpg?token=GHSAT0AAAAAACJGTNI7MRN2UYE52T7UVET2ZJW3HKA,0
+3,Centenario,1400.00,https://raw.githubusercontent.com/CodeSystem2022/Ecommerce-YoungDevelopers/main/ecommerce_pi/img-vinos/vino3.jpg?token=GHSAT0AAAAAACJGTNI6EAIBPXZSIL74K5J6ZJW3ITA,0
+4,"El Ganador",2000.00,https://raw.githubusercontent.com/CodeSystem2022/Ecommerce-YoungDevelopers/main/ecommerce_pi/img-vinos/vino4.jpg?token=GHSAT0AAAAAACJGTNI62B5F6AD33QVZMN2YZJW3IWA,0
+5,Moura,2500.00,https://raw.githubusercontent.com/CodeSystem2022/Ecommerce-YoungDevelopers/main/ecommerce_pi/img-vinos/vino5.jpg?token=GHSAT0AAAAAACJGTNI7M4MKMLQKRE274FFIZJW3IZA,0
+6,Cabernet,1900.00,https://raw.githubusercontent.com/CodeSystem2022/Ecommerce-YoungDevelopers/main/ecommerce_pi/img-vinos/vino6.jpg?token=GHSAT0AAAAAACJGTNI6M6LFDOAHWTGA75U4ZJW3I3Q,0
+7,"San Telmo",1700.00,https://raw.githubusercontent.com/CodeSystem2022/Ecommerce-YoungDevelopers/main/ecommerce_pi/img-vinos/vino7.jpg?token=GHSAT0AAAAAACJGTNI7YOTGFH6YH5JAV6W2ZJW3I6Q,0
+8,"La Ocasion",3500.00,https://raw.githubusercontent.com/CodeSystem2022/Ecommerce-YoungDevelopers/main/ecommerce_pi/img-vinos/vino8.jpg?token=GHSAT0AAAAAACJGTNI6TF22YV3OKDDBHXRKZJW3JBA,0
+9,"La Bodega",3000.00,https://raw.githubusercontent.com/CodeSystem2022/Ecommerce-YoungDevelopers/main/ecommerce_pi/img-vinos/vino9.jpg?token=GHSAT0AAAAAACJGTNI63RTEBHAUL2UIWBUQZJW3JEA,0
