@@ -1,0 +1,273 @@
+/* Aquí diseñamos el inicio de sesión */
+/* Reset de estilos y estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  
+/* Estilos del cuerpo de la página */
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #f8efea;
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilos de Grapes */
+.grapes1, .grapes2, .grapes3, .grapes4, .grapes5, .grapes6, .grapes7 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+}
+.background-group{
+    position: fixed;
+    z-index:1; 
+    top: 0;
+    left: 0;
+    width:100%; 
+    height: 100vh;
+}
+.grapes1 {
+    
+    width: 606px;
+    height: 632px;
+    top: 0;
+    left: 0;
+}
+.grapes2 {
+    
+    width: 1160px;
+    height: 537px;
+    top: 0;
+    left: 77px;
+}
+.grapes3 {
+    width: 669px;
+    height: 750px;
+    top: 0;
+    left: 755px;
+    right: 0;
+    transform: rotateY(856.27) rotateX(-278);
+}
+
+.grapes4 {
+    
+    width: 313px;
+    height: 532px;
+    top: 268px;
+    left: 0;
+}
+
+.grapes5 {
+    
+    width: 641px;
+    height: 365px;
+    top: 435px;
+    left: 131px;
+}
+.grapes6 {
+    
+    width: 822px;
+    height: 438px;
+    top: 362px;
+    left: 455px;
+}
+
+.grapes7 {
+    
+    width: 453px;
+    height: 664px;
+    top: 136px;
+    left: 987px;
+}
+
+.grapes6 {
+    width: 822px;
+    height: 438px;
+    top: 362px;
+    left: 434px;
+}
+
+.form{
+    position: absolute;
+    z-index: 1; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: #f8efea;
+    width: 80%;
+    max-width: 600px; 
+    padding: 4.5em 3em 40px;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.form__title{
+    font-family: 'Libre Bodoni', serif;
+    font-size: 30px;
+    color: #231f20;
+    margin-bottom: 0.5em; 
+}
+
+.form__logo{
+    text-align: center; 
+    margin-bottom: 5px; 
+}
+.logo {
+    max-width: 100px; 
+}
+.form__link {
+    font-weight: 600;
+    color: #686565;
+}
+
+/* Estilos para enlaces visitados */
+.form__link:hover {
+    color: #231f20; 
+}
+
+/* Estilos para enlaces cuando se hace clic */
+.form__link:active {
+    color:  #6B0908; 
+}
+/* Estilos del contenedor principal del formulario * User - Password - Submit - Parrafo - Link*/
+.form__container {
+    margin-top: 3em;
+    width: 80%; 
+    margin: 0 auto; 
+    display: grid;
+    gap: 5px;
+}
+
+/* " " Grupo Nombre de Usuario - Contraseña*/
+.form__group {
+    position: relative;
+    display: flex; 
+    align-items: center; 
+    margin-top: 25px;
+}
+
+ /*" " Contenedores de entrada de texto Password - User*/
+.input-container {
+    flex: 1; 
+}
+.form__input {
+    width: 100%;
+    background: none;
+    color: #4d4646;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #5757577e;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.form__input:not(:placeholder-shown) {
+    color: #4d4646;
+    
+}
+
+.form__input:focus + .form__label, 
+.form__input:not(:placeholder-shown) + .form__label {
+    transform: translateY(-12px) scale(0.7);
+    transform-origin: left top;
+    color: #231f20;
+}
+/*Etiqueta de Forulario*/
+.form__label{
+    color: #686565;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform 0.5s, color 0.3s;
+    font-size: 20px;
+}
+
+/* "" Iconos User - Key*/
+.icon-container{
+    margin-right: 0px; 
+}
+.icon-container i {
+    font-size: 35px; 
+    margin-right: 10px; 
+    color: #686565; 
+    cursor: pointer;
+
+}
+.form__submit {
+    background-color: #f8efea;
+    color: #231f20;
+    border: 2px solid #231f20; 
+    font-family: 'Inter', sans-serif;
+    font-size: 20px; 
+    font-weight: 600;
+    padding: 10px;
+    width: 160px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 30px auto 15px;
+}
+
+
+.form__submit:hover {
+    background-color: #231f20;
+    color: #f8efea;
+}
+.form__line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px; 
+    background-color: #686565;
+    transition: border-color 0.3s;
+}
+
+.form__input:focus ~ .form__line, .form__input:not(:placeholder-shown) ~ .form__line {
+    transform: scaleX(1); 
+    background-color: #231F20; 
+    height: 2px; 
+}
+
+/*Estilo Iconos de Redes Sociales*/
+.social-icons {
+    padding-top: 30px; 
+}
+
+.social-icons a i{
+    font-size: 35px;
+    color: #231F20;
+    margin-right: 25px;
+    transition: 0.5s ease;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+.social-icons a:hover i{
+    transform: scale(1.5); 
+}
+/**/
+
+
+/* Otros estilos para el footer, como márgenes, alineación, etc. */
+@media (max-width:425px) {
+    .form__title{
+        font-size: 1.8rem; 
+        
+    }
+}
+
+
+
