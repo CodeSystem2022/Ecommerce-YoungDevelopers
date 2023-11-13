@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/client/Contacto/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="client/img/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul class="menu-list">
+                    <li class="menu-item"><a class="menu-link"href="/client/nosotros/nosotros.html">Inicio</a></li>
+                    <li class="menu-item"><a class="menu-link" href="/client/nosotros/nosotros.html">Nosotros</a></li>
+                    <li class="menu-item"><a class="menu-link" href="/client/index.html">Productos</a></li>
+                    <li class="menu-item"><a class="menu-link" href="/client/turismo/turismo.html">Turismo</a></li>
+                    <li class="menu-item"><a class="menu-link" href="/client/Contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <form action="#" class="search-bar">
+            <input type="text"  placeholder="Buscar...">
+            <button type="submit"><i class='bx bx-search'></i></button>
+           </form> 
+           <div class="cart-btn" id="cart-btn">
+            <img src="/client/img/🦆 icon _basket_.svg" alt="Carrito de compras">
+        </div>
+       </div>
+    </header>
+
+    <div>
+        <div class="seccion-grupal">
+            <h1>
+                Envianos tu consulta
+            </h1>
+            <p>
+                Para reclamos o consultas sobre tus compras a través la página, escribinos a través de nuestro mail de contacto o numeros de telefono
+
+                Si necesitás comunicarte con otras áreas de la bodega, por favor, completá el formulario que se encuentra más abajo.
+            </p>
+        </div>
+        <section class="contact-container">
+            <div class="contact-form">
+                <form class="form">
+                    <div class="form-section">
+                        <label for="consulta">Su consulta es para:</label>
+                        <input type="text" placeholder="Ej: Obtener Promociones" id="consulta">
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form-section">
+                        <label for="nombre">Nombre y apellido:</label>
+                        <input type="text" placeholder="Ej: Juan Perez" id="nombre">
+                        <span class="form__line"></span>
+                    </div>
+                   
+                    <div class="form-section">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="text" placeholder="Ej: Juanperez@gmail.com" id="correo">
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form-section">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" placeholder="Ej: 2604-000000" id="telefono">
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form-section">
+                        <label for="localidad">Ciudad o Provincia:</label>
+                        <input type="text" placeholder="Ej: San Rafael" id="localidad">
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form-section2">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea></textarea>
+                    </div>
+                    
+                    <div class="form-section3">
+                        <input type="submit" class="btn btn-send" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <div class="informacion-contacto">
+                <div class="section-with-line">
+                    <h3>Contactanos</h3>
+                    <div class="linea"></div>
+                </div>
+                <div class="social-icons">
+                    <p>bodegatesoroscuyo@gmail.com</p>
+                    <p>+54 9 260 4004880</p>
+                    <p>+54 9 260 4009080</p>
+                </div>
+
+                <div class="section-with-line">
+                    <h3>Nuestras Redes</h3>
+                    <div class="linea"></div>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-instagram-alt' ></i>@tesoros_cuyo</a> 
+                    <a href="#"><i class='bx bxl-facebook'></i>Tesoros de Cuyo</a>
+                    <a href="#"><i class='bx bxl-twitter'></i>TesorosCuyo</a>
+                </div>
+
+                <div class="section-with-line">
+                    <h3>Encontranos</h3>
+                    <div class="linea"></div>
+                </div>
+                <img src="/Contacto/ubicacion.png" alt="Ubicacion" class="ubicacion-img">
+            </div>
+        </section>
+        
+    <footer class="footer">
+        <p>
+            Beber con moderación es clave para tu bienestar y seguridad. ¡Salud! | Copyright © Tesoros de Cuyo 2023 | Argentina
+        </p>
+    </footer>
+   
+</body>
+</html>
