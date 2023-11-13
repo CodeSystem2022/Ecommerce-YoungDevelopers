@@ -8,7 +8,7 @@ const totalesContainer = document.getElementById("totales");
 const cantidadElement = document.getElementById("cantidad");
 const formularioBusqueda = document.getElementById('formulario-busqueda');
 
-/** Crea las tarjetas de productos teniendo en cuenta lo guardado en localstorage */
+// Crea las tarjetas de productos teniendo en cuenta lo guardado en localstorage
 function crearTarjetasProductosCarrito() {
   contenedorTarjetas.innerHTML = "";
   const productos = JSON.parse(localStorage.getItem("vinos"));
@@ -51,7 +51,7 @@ function crearTarjetasProductosCarrito() {
 
 crearTarjetasProductosCarrito();
 
-/** Actualiza el total de precio y unidades de la página del carrito */
+// Actualiza el total de precio y unidades de la página del carrito
 function actualizarTotales() {
   const productos = JSON.parse(localStorage.getItem("vinos"));
   let cantidad = 0;
@@ -76,7 +76,7 @@ document.getElementById("reiniciar").addEventListener("click", () => {
   revisarMensajeVacio();
 });
 
-/** Muestra o esconde el mensaje de que no hay nada en el carrito */
+// Muestra o esconde el mensaje de que no hay nada en el carrito
 function revisarMensajeVacio() {
   const productos = JSON.parse(localStorage.getItem("vinos"));
   carritoVacioElement.classList.toggle("escondido", productos);
@@ -92,7 +92,7 @@ if (productos && productos.length > 0) {
   });
 }
 
-//mp
+// Integracion con mercado pago para realizar las compras
 const mercadopago = new MercadoPago("TEST-80336d73-6404-4e50-90b0-95b22a82486a",{
   locale: "es-AR",
 });
@@ -141,5 +141,4 @@ function createCheckoutButton(preferenceId) {
   };
   window.checkoutButton = renderComponenr(bricksBuilder);
 }
-
 
