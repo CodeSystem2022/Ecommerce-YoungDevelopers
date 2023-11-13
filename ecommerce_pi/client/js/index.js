@@ -1,6 +1,6 @@
-
+// Nos ayudara a gestionar los productos, manejando la creacion de tarjetas
 const contenedorTarjetas = document.getElementById("productos-container");
-
+// Creamos la funcion
 function crearTarjetasProductosInicio(productos) {
     productos.forEach(producto => {
        const nuevoVino = document.createElement("div");
@@ -17,7 +17,7 @@ function crearTarjetasProductosInicio(productos) {
 getVinos().then(vinos => {
   crearTarjetasProductosInicio(vinos);  
 })
-//barra busqueda por nombre
+// Barra busqueda por nombre
 document.addEventListener('DOMContentLoaded', () => {
   const searchButton = document.getElementById('search-button');
   searchButton.addEventListener('click', () => {
@@ -49,7 +49,7 @@ function buscarProductoPorNombre(nombre) {
 
 function mostrarResultadosEnInterfaz(data) {
   const resultsContainer = document.getElementById('results');
-  resultsContainer.innerHTML = ''; // Limpia resultados anteriores
+  resultsContainer.innerHTML = ''; // Limpiar resultados anteriores
 
   if (data.length === 0) {
     resultsContainer.innerHTML = '<p>No se encontraron resultados.</p>';
