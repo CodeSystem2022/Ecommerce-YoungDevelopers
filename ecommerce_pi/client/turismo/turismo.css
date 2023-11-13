@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+/* --------------------------------- Estilos Globales --------------------------------- */
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #f8efea;
+}
+.container{
+    max-width: 1450px;
+
+}
+
+/* --------------------------------- Encabezado (Header) --------------------------------- */
+
+header{
+    background-color:  #231f20; 
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 100%; 
+    position: absolute;
+    top:0; 
+    left:0; 
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 0;
+}
+/* --------------------------------- Menú (Navbar) --------------------------------- */
+.menu .navbar{
+    
+    width: 50%; 
+}
+.menu .navbar .menu-list .menu-item{
+    
+    width: 20%;
+    position: relative; 
+    float:left;  
+    text-align: center;
+}
+.menu .navbar .menu-list .menu-item .menu-link {
+   
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    padding: 25px 0 10px 0; 
+    color:#F8EFEA;
+    display: block;
+    font-weight: 400;
+   
+}
+.navbar .menu-link::after{
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #F8EFEA; 
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s
+}
+
+.navbar .menu-link:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+/* --------------------------------- Barra de busqueda (Navsearch) --------------------------------- */
+.search-bar {
+    width: 340px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid #F8EFEA;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 325px;
+}
+/* ----------------------- Ingreso de Texto de Barra de Busqueda -------------------------- */
+.search-bar input{
+    width: 100%; 
+    background: transparent;
+    border: none; 
+    outline: none;
+    font-size: 16px;
+    color: #F8EFEA; 
+    padding-left: 10px;
+}
+.search-bar input::placeholder{
+    color:#F8EFEA; 
+}
+/* --------------------------------- Botón de Búsqueda --------------------------------- */
+.search-bar button{
+    width: 40px; 
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+.search-bar button i{
+    font-size: 22px;
+    color: #F8EFEA;
+}
+.cart-btn {
+    width: 30px; 
+    height: auto; 
+    margin: 0; 
+    display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.cart-btn img {
+    width: 30px; 
+    height: auto; 
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width:25px ;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: right;
+    margin: 0px 40px 0px 610px;
+}
+
+.header-content h1{
+    font-family: 'Bodoni Moda', serif;
+    font-size:50px; 
+    line-height: 80px;
+    color:#f9fafc; 
+    margin-bottom: 35px;
+    text-align: right;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    border: 2px solid rgb(247, 249, 252);
+}
+
+.btn-1:hover {
+    box-shadow: 0 0 20px rgba(247, 249, 252, 0.9);
+}
+
+
+/* ********************************** */
+/*              FEATURES              */
+/* ********************************** */
+
+.container-features {
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+}
+
+.card-feature {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+    color: #231f20;
+
+}
+
+.card-feature i {
+	font-size: 3rem;
+    color: #231f20;
+}
+
+.feature-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.feature-content span {
+	font-weight: 700;
+	font-size: 1.2rem;
+	color: var(--dark-color);
+}
+
+.feature-content p {
+	color: #777;
+	font-weight: 500;
+    margin: 0px;   
+}
+
+
+
+
+.seccion-grupal {
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 100px;
+  }
+.seccion-grupal h1 {
+    color: #231f20;
+    text-align: left;
+    margin: 0; 
+    font-family: 'Bodoni Moda', serif;
+    font-size:50px; 
+    margin-bottom: 15px;
+    
+}
+.seccion-grupal p {
+    text-align: left; 
+    font-size:18px; 
+    color: #414247;
+    max-width: 900px;
+    line-height: 160%;
+    margin: 15px, 0;
+}
+
+
+.classification {
+  display: flex; 
+  align-items: center; 
+}
+
+.classification h2 {
+  text-align: left;
+  margin: 0;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 30px;
+  color: #231f20;
+  margin-right: 20px; 
+}
+
+.classification .linea {
+  border: 0;
+  border-top: 2px solid #231f20;;
+  flex-grow: 1; 
+  margin: 0;
+}
+.catalogue-1, .catalogue-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between; 
+    margin: 50px 0px;
+  }
+  
+  .catalogue-1 .tour,
+  .catalogue-2 .tour {
+    flex: 0 0 calc(33.33% - 2rem); 
+  }
+
+  .catalogue-1 .tour:last-child,
+  .catalogue-2 .tour:last-child{
+    margin-right: 0;
+  }
+
+
+
+.texto-catalogue-1 .texto-catalogue-2{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.botones-catalogue-1 .botones-catalogue-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.botones-catalogue-1 .botones-catalogue-2 button{
+    flex: 0 0 calc(50% - 1rem);
+    padding: 1rem 3rem;
+}
+@media(min-width: 768px) {
+    .botones-catalogue-1{
+        display: inline-block;
+    }
+    .botones-catalogue-1 button{
+        flex: unset;
+    }
+}
+@media(min-width: 768px) {
+    .catalogue-1 .catalogue-2 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
+}
+.tour{
+    flex: 0 0 calc(33.3% - 1rem);
+    border-radius: 5px;
+}
+.tour h2{
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+    color: #231f20;
+    font-size:20px; 
+    margin-bottom: 20px;
+}
+.tittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinear horizontalmente al centro */
+    align-items: center; /* Alinear verticalmente al centro */
+    margin: 20px 0 15px 0;
+    text-align: center;
+}
+.tittle h3{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 20px;
+    color: #231f20;
+    font-weight: bold;
+}
+.tittle p{
+    font-size: 16px;
+    font-family:"Inter-Regular", Helvetica;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+    max-width: 800px; /* Ancho máximo de la grilla */
+    margin: 0 auto; /* Centrar la grilla en el contenedor */
+    gap: 10px; /* Espacio entre las secciones */
+}
+
+.seccion {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.grilla .seccion i {
+    font-size: 24px;
+    margin-right: 10px;
+    color:  #414247;
+    align-items: center; /* Alinear horizontalmente los iconos */
+}
+
+.grilla .seccion p {
+    font-size: 16px;
+    font-family: "Inter-Regular", Helvetica;
+    color:  #414247; 
+    margin: 0px;
+}
+
+
+
+img{
+    width: 100%; /* Ajusta el valor del ancho según tus necesidades */
+    height: 500px; /* Ajusta el valor de la altura según tus necesidades */
+    object-fit: cover; /* Esto permite que la imagen se ajuste sin distorsionarla */
+}
+
+
+.btn-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  .left  {
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s;
+    border: 2px solid #231f20;
+    margin: 0px;
+    border-right: none;
+  }
+  .rigth  {
+    flex: 2;
+    text-align: center;
+    transition: background-color 0.3s;
+    border: 2px solid #231f20;
+    margin: 0px;
+  }
+  .left p, .rigth p{
+    font-weight: 600; 
+    border: none;
+    margin: 8px auto; 
+    text-align: center; 
+  }
+ .bx {
+    padding-left: 5px;
+    padding-right: 5px;
+ }
+
+/* --------------------------------- Pie de pagina --------------------------------- */
+.footer{
+    padding: 30px 0;
+    background-color: #231f20;  
+    font-family: "Inter-Regular", Helvetica;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+/* Contenido del pie de página */
+.footer-content{
+   
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    margin: 0px 100px 0px 100px ; 
+    width: 100%; 
+}
+/* Enlaces en el pie de página */
+.link {
+    align-items: center; 
+    display: inline-block;
+    text-align: center;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Línea vertical en el pie de página */
+.linea-2 {
+   
+        border-left: 2px solid #F8EFEA; 
+        height: 30px; 
+        margin-bottom: 20px;
+}
+
+/* Bloque de contenido en el centro del pie de página */
+.center-block {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+}
+/* Descargo de responsabilidad en el pie de página */
+.footer-disclaimer {
+    background-color: #1E1E1E;
+    font-size: 16px;
+    color: #f8efea4f;
+    padding: 10px;
+}
+/* Línea horizontal en el pie de página */
+.linea {
+    border-top: 2px solid #F8EFEA; 
+    width: 380px;
+    margin: 20px auto 0;
+}
+
+/* Estilos de los encabezados en el pie de página */
+.link h3{
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    color: #F8EFEA;
+    margin-bottom: 15px;
+}
+.link a {
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    color: #f8efea4f;
+    display: block;
+    margin-bottom: 5px;
+    height: 25px; 
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+}
+.link i {
+    font-size: 20px; 
+    margin-right: 5px; 
+    color:  #f8efea4f;
+}
+.center-block h3{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 25px;
+    color: #F8EFEA;
+    text-align: center;
+
+}
+.center-block p {
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 18px;
+    color: #f8efea4f;
+    text-align: center;
+    margin: 15px;
+}
+
+.center-block button {
+    background-color: #231F20; 
+    color: #f9fafc; 
+    border: 2px solid rgb(247, 249, 252);
+    padding: 11px 35px;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    cursor: pointer;
+    transition:0.3s, color 0.3s; 
+}
+
+.center-block button:hover {
+    color: #231F20; 
+    box-shadow: 0 0 20px rgba(247, 249, 252, 0.9);
+    color: #F8EFEA;
+}
+/* Descargo de responsabilidad en el pie de página */
+.footer-disclaimer {
+    background-color: #1E1E1E;
+    font-size: 16px;
+    color: #f8efea4f;
+    padding: 10px;
+    text-align: right; 
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top:100%; 
+        left: 0;
+        right: 0;
+        background-color:#1E1E1E;
+        display: none;
+    }
+    .menu .navbar .menu-list .menu-item{
+        width:100%; 
+    }
+    
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .header-content{
+        padding: 100px 30px;
+    }
+
+    .header-content p{
+        padding: 0;
+    }
+
+    .services{
+        padding:30px;
+    }
+    .services-content p{
+        padding: 0;
+    }
+    .services-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .services-1{
+        margin-bottom: 25px;
+    }
+    
+    .general{
+        flex-direction: column;
+    }
+    .general-1, .general-5{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2, .general-3{
+        display: none;
+    }
+   
+    .footer{
+        padding: 30px;
+    }
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .center-block{
+        margin: 20px;
+    }
+
+
+
+}
