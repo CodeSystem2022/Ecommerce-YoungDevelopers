@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+
+header{
+  background-color:  #231f20; 
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a{
+  color: #fff;
+}
+.search-input{
+  border-radius: 10px;
+  width: 200px;
+  height: 25px;
+}
+.search-button{
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100px;
+  height: 20px;
+  border: none;
+  margin-right: 0px;
+}
+.cart-icon{
+  padding: 5px;
+  margin: 30px;
+}
+
 #cart-container{
     max-width: 500px;
     margin: auto;
@@ -8,31 +38,33 @@
     align-items: center;
     height: 100px;
     gap: 20px;
+    margin: 10px;
   }
   
   .tarjeta-producto img{
     height: 100%;
+  
   }
   
   .tarjeta-producto h3{
     width: 130px;
   }
   .tarjeta-producto div{
-    background-color: var(--color-acento-claro);
     padding: 3px;
     border-radius: 5px;
   }
   
   #totales{
     text-align: center;
+    font-size: large;
   }
   
   #carrito-vacio{
     text-align: center;
   }
   .btn-primary{
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #000;
+    border-color: #000;
     border-radius: 5px;
     margin-bottom: 10px;
     color:#fff;
@@ -50,8 +82,8 @@
     border-color: #0062cc;
   }
  #reiniciar{
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #000;
+  border-color: #000;
     border-radius: 5px;
     margin-bottom: 10px;
     color:#fff;
@@ -63,3 +95,121 @@
     cursor:pointer
     
  }
+ .footer{
+  padding: 30px 0;
+  background-color: rgb(35, 31, 32);  
+  font-family: "Inter-Regular", Helvetica;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+/* Contenido del pie de página */
+.footer-content{
+ 
+  display: flex;
+  justify-content: center; 
+  text-align: center;
+  margin: 0px 100px 0px 100px ; 
+  width: 100%; 
+}
+/* Enlaces en el pie de página */
+.link {
+  align-items: center; 
+  display: inline-block;
+  text-align: center;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Línea vertical en el pie de página */
+.linea-2 {
+ 
+      border-left: 2px solid #F8EFEA; 
+      height: 30px; 
+      margin-bottom: 20px;
+}
+
+/* Bloque de contenido en el centro del pie de página */
+.center-block {
+  display: inline-block;
+  width: 33.33%;
+  text-align: center;
+}
+/* Descargo de responsabilidad en el pie de página */
+.footer-disclaimer {
+  background-color: #1E1E1E;
+  font-size: 16px;
+  color: #f8efea4f;
+  padding: 10px;
+}
+/* Línea horizontal en el pie de página */
+.linea {
+  border-top: 2px solid #F8EFEA; 
+  width: 380px;
+  margin: 20px auto 0;
+}
+
+/* Estilos de los encabezados en el pie de página */
+.link h3{
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 16px;
+  color: #F8EFEA;
+  margin-bottom: 15px;
+}
+.link a {
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  color: #f8efea4f;
+  display: block;
+  margin-bottom: 5px;
+  height: 25px; 
+  text-align: center;
+  display: flex; 
+  align-items: center; 
+}
+.link i {
+  font-size: 20px; 
+  margin-right: 5px; 
+  color:  #f8efea4f;
+}
+.center-block h3{
+  font-family: 'Bodoni Moda', serif;
+  font-size: 25px;
+  color: #F8EFEA;
+  text-align: center;
+
+}
+.center-block p {
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 18px;
+  color: #f8efea4f;
+  text-align: center;
+  margin: 15px;
+}
+
+.center-block button {
+  background-color: #231F20; 
+  color: #f9fafc; 
+  border: 2px solid rgb(247, 249, 252);
+  padding: 11px 35px;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 16px;
+  cursor: pointer;
+  transition:0.3s, color 0.3s; 
+}
+
+.center-block button:hover {
+  color: #231F20; 
+  box-shadow: 0 0 20px rgba(247, 249, 252, 0.9);
+  color: #F8EFEA;
+}
+/* Descargo de responsabilidad en el pie de página */
+.footer-disclaimer {
+  background-color: #1E1E1E;
+  font-size: 16px;
+  color: #f8efea4f;
+  padding: 10px;
+  text-align: right; 
+}
