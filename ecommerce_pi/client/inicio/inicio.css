@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+/*  Estilos Globales */
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #f8efea;
+}
+.container{
+    max-width: 1450px;
+    margin: 12px 12px 12px 12px;
+}
+
+/* Encabezado (Header)  */
+
+header{
+    background-image: linear-gradient(
+    rgba(0,0,0,0),
+    rgba(0,0,0,0)), 
+    url("/client/img/vista-frontal-sabroso-plato-frutas-uvas-botella-vino-queso-copa-vino-oscuridad.jpg"); 
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    width: 100%; 
+    position: absolute;
+    top:0; 
+    left:0; 
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Menú (Navbar) */
+.menu .navbar{
+    width: 50%; 
+}
+.menu .navbar .menu-list .menu-item{
+    width: 20%;
+    position: relative; 
+    float:left;  
+    text-align: center;
+}
+.menu .navbar .menu-list .menu-item .menu-link {
+   
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    padding: 25px 0 10px 0; 
+    color:#F8EFEA;
+    display: block;
+    font-weight: 400;
+   
+}
+.navbar .menu-link::after{
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #F8EFEA; 
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s
+}
+
+.navbar .menu-link:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Estilos de la ventana emergente */
+.popup {
+    display: none;
+    position: absolute;
+    background-color: rgba(35, 31, 32, 0.5);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    z-index: 1;
+    width: 145px;
+    color: #F8EFEA;
+}
+
+/* Estilo para mostrar la ventana emergente en el hover */
+li:hover .popup {
+    display: block;
+    top: 100%;
+    left: 0;
+}
+
+.popup-link{
+    color: #F8EFEA;
+    text-decoration: none;
+    margin: 50px 0; 
+}
+
+
+
+/*  Barra de busqueda (Navsearch)  */
+.search-bar {
+    width: 340px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid #F8EFEA;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 325px;
+}
+/*  Ingreso de Texto de Barra de Busqueda  */
+.search-bar input{
+    width: 100%; 
+    background: transparent;
+    border: none; 
+    outline: none;
+    font-size: 16px;
+    color: #F8EFEA; 
+    padding-left: 10px;
+}
+.search-bar input::placeholder{
+    color:#F8EFEA; 
+}
+/* Botón de Búsqueda  */
+.search-bar button{
+    width: 40px; 
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+.search-bar button i{
+    font-size: 22px;
+    color: #F8EFEA;
+}
+.cart-btn {
+    width: 30px; 
+    height: auto; 
+    margin: 0; 
+    display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.cart-btn img {
+    width: 30px; 
+    height: auto; 
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width:25px ;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: right;
+    margin: 0px 40px 0px 610px;
+}
+
+.header-content h1{
+    font-family: 'Bodoni Moda', serif;
+    font-size:50px; 
+    line-height: 80px;
+    color:#f9fafc; 
+    margin-bottom: 35px;
+    text-align: right;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    border: 2px solid rgb(247, 249, 252);
+}
+
+.btn-1:hover {
+    box-shadow: 0 0 20px rgba(247, 249, 252, 0.9);
+}
+
+
+/*  Seccion Grupal */
+.seccion-grupal {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 150px;
+}
+
+.seccion-grupal section {
+    width: 100%;
+}
+
+.general{
+    display: flex;
+}
+.general-5{
+    display: flex;
+}
+
+.general-1 {
+    width: 50%; 
+    padding: 50px 30px 100px 0px ;
+    color: #686565;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; 
+}
+.general-5 {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 50%;
+    padding: 50px 0 100px 30px; 
+    color: #686565;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+
+.general-2{
+    background-image: url(/client/img/cerrar-personas-tintineo-vasos\ 1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3{
+    background-image: url(/client/img/cerrar-personas-tintineo-vasos\ 2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.general-4{
+    background-image: url(/client/img/cerrar-personas-tintineo-vasos\ 3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 40px;
+    line-height: 70px;
+    color: #6B0908;
+    margin-bottom: 20px; 
+}
+
+p{
+    font-size: 16px; 
+    color:#414247; 
+    margin: 25px 0 45px 0;
+}
+
+
+/* Pie de pagina  */
+.footer{
+    padding: 30px 0;
+    background-color: rgb(35, 31, 32);  
+    font-family: "Inter-Regular", Helvetica;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+/* Contenido del pie de página */
+.footer-content{
+   
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    margin: 0px 100px 0px 100px ; 
+    width: 100%; 
+}
+/* Enlaces en el pie de página */
+.link {
+    align-items: center; 
+    display: inline-block;
+    text-align: center;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Línea vertical en el pie de página */
+.linea-2 {
+   
+        border-left: 2px solid #F8EFEA; 
+        height: 30px; 
+        margin-bottom: 20px;
+}
+
+/* Bloque de contenido en el centro del pie de página */
+.center-block {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+}
+/* Descargo de responsabilidad en el pie de página */
+.footer-disclaimer {
+    background-color: #1E1E1E;
+    font-size: 16px;
+    color: #f8efea4f;
+    padding: 10px;
+}
+/* Línea horizontal en el pie de página */
+.linea {
+    border-top: 2px solid #F8EFEA; 
+    width: 380px;
+    margin: 20px auto 0;
+}
+
+/* Estilos de los encabezados en el pie de página */
+.link h3{
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    color: #F8EFEA;
+    margin-bottom: 15px;
+}
+.link a {
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    color: #f8efea4f;
+    display: block;
+    margin-bottom: 5px;
+    height: 25px; 
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+}
+.link i {
+    font-size: 20px; 
+    margin-right: 5px; 
+    color:  #f8efea4f;
+}
+.center-block h3{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 25px;
+    color: #F8EFEA;
+    text-align: center;
+
+}
+.center-block p {
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 18px;
+    color: #f8efea4f;
+    text-align: center;
+    margin: 15px;
+}
+
+.center-block button {
+    background-color: #231F20; 
+    color: #f9fafc; 
+    border: 2px solid rgb(247, 249, 252);
+    padding: 11px 35px;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    cursor: pointer;
+    transition:0.3s, color 0.3s; 
+}
+
+.center-block button:hover {
+    color: #231F20; 
+    box-shadow: 0 0 20px rgba(247, 249, 252, 0.9);
+    color: #F8EFEA;
+}
+/* Descargo de responsabilidad en el pie de página */
+.footer-disclaimer {
+    background-color: #1E1E1E;
+    font-size: 16px;
+    color: #f8efea4f;
+    padding: 10px;
+    text-align: right; 
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top:100%; 
+        left: 0;
+        right: 0;
+        background-color:#1E1E1E;
+        display: none;
+    }
+    .menu .navbar .menu-list .menu-item{
+        width:100%; 
+    }
+    
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .header-content{
+        padding: 100px 30px;
+    }
+
+    .header-content p{
+        padding: 0;
+    }
+
+    .services{
+        padding:30px;
+    }
+    .services-content p{
+        padding: 0;
+    }
+    .services-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .services-1{
+        margin-bottom: 25px;
+    }
+    
+    .general{
+        flex-direction: column;
+    }
+    .general-1, .general-5{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2, .general-3{
+        display: none;
+    }
+   
+    .footer{
+        padding: 30px;
+    }
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .center-block{
+        margin: 20px;
+    }
+
+
+
+}
