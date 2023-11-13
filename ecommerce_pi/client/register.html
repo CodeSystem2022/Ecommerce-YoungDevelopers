@@ -1,0 +1,77 @@
+<!-- Aqui creamos el registro-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/client/sesion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./js/register.js" defer></script>
+</head>
+<body>
+    <div class="background-group">
+        <div class="overlap-group">
+            <img class="grapes1" src="/client/img/Grapes1.svg" />
+            <img class="grapes4" src="/client/img/Grapes4.svg" />
+            <img class="grapes5" src="/client/img/Grapes5.svg" />
+            <img class="grapes7" src="/client/img/Grapes7.svg" />
+            <img class="grapes6" src="/client/img/Grapes6.svg" />
+            <img class="grapes2" src="/client/img/Grapes2.svg" />
+            <img class="grapes3" src="/client/img/Grapes3.svg" />
+        </div>
+    </div>
+    <main>
+        <div class="form">
+            <h1 class="form__title">Registro de Usuario</h1>
+            <div class="form__container" id="register-form">
+                <div class="form__group">
+                    <div class="input-container">
+                        <form id="register-form">
+                          <input type="text" class="form__input" name="username" id="username" placeholder="Nombre de usuario">
+                          <label for="username" class="form_label"></label>
+                          <span class="form__line"></span>
+                        </div>
+                        <div class="icon-container">
+                            <i class='bx bx-user-circle'></i>
+                        </div>
+                </div>
+                <div class="form__group">
+                    <div class="input-container">
+                        <form id="register-form">
+                         <input type="email" class="form__input" name="email" id="email" placeholder="Correo electrónico">   
+                         <label for="email" class="form__label"></label>
+                         <span class="form__line"></span>
+                        </div>
+                        <div class="icon-container">
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                </div>
+                <div class="form__group">
+                    <div class="input-container">
+                        <form id="register-form">
+                          <input type="password" class="form__input" name="password" id="password" placeholder="Contraseña">  
+                          <label for="password" class="form__label"></label>
+                          <span class="form__line"></span>
+                        </div>
+                        <div class="icon-container">
+                           <i class='bx bx-key'></i>
+                        </div>                    
+                    </div>
+                <button type="submit" class="form__submit">Registrarse</button>
+            </div>
+            <p class="form__paragraph">¿Ya estas registrado? - <a href="./login.html">Iniciar sesión</a></p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxs-envelope' ></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a> 
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div> 
+        </div>
+    </main>
+    
+</body>
+</html>
