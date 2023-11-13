@@ -1,0 +1,76 @@
+<!-- Aqui creamos el inicio de sesión-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Título de la página y enlaces a hojas de estilo y fuentes -->
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="/client/sesion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!-- enlace a un script de js-->
+    <script src="./js/login.js" defer></script>
+</head>
+<body>
+     <!-- Imagenes de fondo -->
+    <div class="background-group">
+        <div class="overlap-group">
+            <img class="grapes1" src="/client/img/Grapes1.svg" />
+            <img class="grapes4" src="/client/img/Grapes4.svg" />
+            <img class="grapes5" src="/client/img/Grapes5.svg" />
+            <img class="grapes7" src="/client/img/Grapes7.svg" />
+            <img class="grapes6" src="/client/img/Grapes6.svg" />
+            <img class="grapes2" src="/client/img/Grapes2.svg" />
+            <img class="grapes3" src="/client/img/Grapes3.svg" />
+        </div>
+    </div>
+     <!-- Visualizamos el contenido principal de la pagina -->
+    <main>
+         <!-- Formulario de inicio de sesion -->
+        <div class="form">
+            <h1 class="form__title">Iniciar Sesión</h1>
+            <div class="form__logo">
+                 <!-- Presentamos el logo de nuestra bodega -->
+                <img class="logo" src="/client/img/Logo Bodega-04.svg" />
+            </div>
+            <div class="form__container">
+                <div class="form__group">
+                    <div class="input-container">
+                      <form id="login-form">
+                        <input type="text" class="form__input" name="user" id="username" placeholder="Nombre de usuario">
+                        <label for="username" class="form__label"></label>
+                        <span class="form__line"></span>
+                     </div>    
+                    <div class="icon-container">
+                         <i class='bx bx-user-circle'></i>
+                    </div>
+                </div>    
+                <div class="form__group">
+                    <div class="input-container">
+                        <form id="login-form">
+                        <input type="password" class="form__input" name="password" id="password" placeholder="Contraseña">       
+                        <label for="password" class="form__label"></label>
+                        <span class="form__line"></span>
+                    </div>    
+                    <div class="icon-container">
+                         <i class='bx bx-key'></i>
+                    </div>
+                </div>    
+                <button type="submit" class="form__submit">Ingresar</button>        
+                       
+            </div>
+             <!-- Enlace para registrarse y redes sociales -->
+            <p class="form__paragraph">¿Todavía no tienes cuenta?   |  <a href="/client/register.html" class="form__link">Registrarse</a></p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxs-envelope' ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a> 
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
