@@ -1,3 +1,9 @@
+/* Reset de estilos y estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
 
 
   
@@ -11,6 +17,7 @@
   
   h3, p{
     margin: 5px;
+    color: #000;
   }
   
   .escondido{
@@ -63,10 +70,11 @@
   }
   
   #cuenta-carrito{
-    position: absolute;
+    position:absolute;
     background-color: var(--color-acento);
     border-radius: 100%;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     height: 25px;
     line-height: 25px;
     aspect-ratio: 1;
