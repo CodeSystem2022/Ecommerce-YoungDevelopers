@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<!-- Configuración del documento -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="cart.css">
+	<!-- Enlaces a hojas de estilo externas y fuentes de Google -->
+	<link rel="stylesheet" href="/client/style.css">
+	<link rel="stylesheet" href="/client/cart.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<!-- Enlaces a scripts externos y locales -->
 	<script src="/client/js/productosService.js"></script>
     <script src="./js/cartService.js" defer></script>
 	<script src="https://sdk.mercadopago.com/js/v2"></script>
@@ -17,20 +23,33 @@
 	<title>vinos - Carrito</title>
 </head>
 <body>
-  <header>
-		<nav>
+	<header>
+		<div class="menu container">
+			<nav>
+			<!-- Logo y enlaces de navegación necesarios para nuestro proyecto -->
 			<a href="" alt="Logo" id="logo"></a>
 			<div>
-				<a href="./index.html">Inicio</a>
-				<a href="#">Ir a la web</a>
-				<a href="./cart.html" id="cart"><img src="" alt=""><span id="cuenta-carrito">0</span></a>
+				<a href="./inicio/inicio.html">Inicio</a>
+				<a href="./login.html">Iniciar sesion</a>
+				<a href="./register.html">Registrate</a>
+				<!-- Icono de nuestro carrito de compras -->
+				<a href="./cart.html" class="cart-icon" id="cart"><img src="./img/🦆 icon _basket_.svg" alt=""><span id="cuenta-carrito">0</span></a>
+			</div>
+			<div class="search-container">
+				<input type="text" class="search-input" id="search-input" placeholder="">
+				<button class="search-button" id="search-button">Buscar</button>
+			</div>
+			<div id="results">
 			</div>
 		</nav>
 	</header>
 	<main>
-		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="index.html">elige algunos productos</a></p>
+	<!-- Mensaje para carrito vacío -->
+		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="./index.html">elige algunos productos</a></p>
 		<section id="cart-container">
 		</section>
+	
+		<!-- Podremos visualizar las cantidades en nuestro carrito -->
   <section id="totales">
     <p>Total unidades: <span id="cantidad">0</span></p>
     <p>Total precio: $<span id="precio">0</span></p>
@@ -39,7 +58,39 @@
     <button  id="reiniciar">Reiniciar</button>
   </section>
 </main>
-	<footer>
+<footer class="footer">
+	<div class="footer-content container">
+		<div class="link">
+		
+		<!-- Enlaces y redes sociales con las que cuenta nuestra bodega -->
+			<h3>Redes</h3>
+			<div class="linea-2"></div>
+			<ul>
+				<li><a href="#"><i class='bx bxl-instagram-alt'></i>@tesoros_cuyo</a></li>
+				<li><a href="#"><i class='bx bxl-facebook'></i>Tesoros de Cuyo</a></li>
+				<li><a href="#"><i class='bx bxl-twitter'></i>TesorosCuyo</a></li>
+			</ul>
+		</div>
+		<div class="center-block">
+			<h3>Tesoros de Cuyo</h3>
+			<div class="linea"></div>
+			<p>Donde el sabor encuentra su origen</p>
+			<button>Idioma</button>
+		</div>
+		<div class="link">
+			<h3>Contacto</h3>
+			<div class="linea-2"></div>
+			<ul>
+				<li><a href="#">bodegatesoroscuyo@gmail.com</a></li>
+				<li><a href="#">+54 9 260 4004880</a></li>
+				<li><a href="#">+54 9 260 4009080</a></li> 
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="footer-disclaimer">
+	Beber con moderación es clave para tu bienestar y seguridad. ¡Salud! | Copyright © Tesoros de Cuyo 2023 | Argentina
+</div>
 		 
 </body>
 
