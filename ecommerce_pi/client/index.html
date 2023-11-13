@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="./index.css">
+	<link rel="stylesheet" href="/Inicio/inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<script src="./js/productosService.js"></script>
 	<script src="./js/cartService.js" defer></script>
 	<script src="./js/index.js" defer></script>
@@ -14,29 +19,101 @@
 </head>
 <body>
     <header>
-		<nav>
-			<a href="" alt="Logo" id="logo"></a>
-			<div>
-				<a href="./index.html">Inicio</a>
-				<a href="#">Ir a web</a>
-				<a href="./cart.html" id="cart"><img src="./img/cart-alt-solid-36.png" alt=""><span id="cuenta-carrito">0</span></a>
+		<header class="header">
+            <div class="menu container">
+                <input type="checkbox" id="menu"/>
+                <label for="menu">
+                    <img src="/client/img/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a class="menu-link"href="/client/inicio/inicio.html">Inicio</a></li>
+                        <li class="menu-item"><a class="menu-link" href="/client/login.html">Iniciar sesion</a></li>
+                        <li class="menu-item"><a class="menu-link" href="/client/login.html">Registrate</a></li>
+                        
+                    </ul>
+                </nav>
+    
+                <form action="#" class="search-bar">
+                <input type="text"  placeholder="Buscar...">
+                <button type="submit"><i class='bx bx-search'></i></button>
+               </form> 
+               <a href="./cart.html" id="cart"><img src="/client/img/🦆 icon _basket_.svg" alt=""><span id="cuenta-carrito">0</span></a>
 			</div>
-			<div class="search-container">
-				<input type="text" id="search-input" placeholder="Buscar por nombre">
-				<button id="search-button">Buscar</button>
-			</div>
-			<div id="results">
-			</div>
-		</nav>
+    
+               
+           </div>
+        </header>
 	</header>
 	<main>
+        <div class="seccion-grupal">
+            <div>
+            <h1>
+                Catalogo de Vinos
+            </h1>
+           <p> 
+            Producidos exclusivamente con uvas locales de cultivo orgánico, son aptos para veganos y están libres de aditivos no deseados. 
+            Nuestros vinos están diseñados para satisfacer el paladar de los bebedores más exigentes y sus amigos. 
+           </p> 
+    
+           <section class="gallery">
+            <img
+                src="/client/img/grapes.jpg"
+                alt="Gallery Img1"
+                class="gallery-img-1"
+            /><img
+                src="/client/img/top-view-wine-carafe-glass-table.jpg"
+                alt="Gallery Img2"
+                class="gallery-img-2"
+            /><img
+                src="/client/img/stylish-young-girl-with-foxy-hairstyle-modern-straw-hat-cool-summer-outfit-posing-with-glass-with-champagne-outdoor.jpg"
+                alt="Gallery Img3"
+                class="gallery-img-3"
+            /><img
+                src="/client/img/bunches-fresh-ripe-red-grapes-dark-surface.jpg"
+                alt="Gallery Img4"
+                class="gallery-img-4"
+            /><img
+                src="/client/img/Rectangle_30_48d3e931-c157-42e8-ac91-98426acbb020_1080x.webp"
+                alt="Gallery Img5"
+                class="gallery-img-5"
+            />
+        </section>
 		<section id="productos-container">
 		</section>
 	</main> 
-    <footer>
-		<span><img src="./img/facebook-circle-logo-36.png"></span>
-		<span><img src="./img/instagram-logo-36.png"></span>
-		
-	</footer>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Redes</h3>
+                <div class="linea-2"></div>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-instagram-alt'></i>@tesoros_cuyo</a></li>
+                    <li><a href="#"><i class='bx bxl-facebook'></i>Tesoros de Cuyo</a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'></i>TesorosCuyo</a></li>
+                </ul>
+            </div>
+            <div class="center-block">
+                <h3>Tesoros de Cuyo</h3>
+                <div class="linea"></div>
+                <p>Donde el sabor encuentra su origen</p>
+                <button>Idioma</button>
+            </div>
+            <div class="link">
+                <h3>Contacto</h3>
+                <div class="linea-2"></div>
+                <ul>
+                    <li><a href="#">bodegatesoroscuyo@gmail.com</a></li>
+                    <li><a href="#">+54 9 260 4004880</a></li>
+                    <li><a href="#">+54 9 260 4009080</a></li> 
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-disclaimer">
+        Beber con moderación es clave para tu bienestar y seguridad. ¡Salud! | Copyright © Tesoros de Cuyo 2023 | Argentina
+    </div>
+</body>
+</html>
 </body>
 </html>
